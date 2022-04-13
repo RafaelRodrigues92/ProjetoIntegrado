@@ -1,75 +1,44 @@
-package projeto;
-
-import java.util.Scanner;
+package desconto;
 
 public class Cadastro {
-	
+	// Atributos
 		private String nome;
-		private String identidadeGenero;
-		private String orientacaoSexual;
+		private String identiGenero; 
+		private String OrientSexo;
 		private String etnia;
-		private double salario;
+		private double renda;
 		
-		Scanner entradaUsuario = new Scanner(System.in);
-		
-		
-		
+		// Métodos de ação --> getters and setters
 		public String getNome() {
 			return nome;
 		}
-		
 		public void setNome(String nome) {
 			this.nome = nome;
 		}
-
-		public String getIdentidadeGenero() {
-			return identidadeGenero;
+		public String getIdentiGenero() {
+			return identiGenero;
 		}
-		
-		public void setIdentidadeGenero(String identidadeGenero) {
-			this.identidadeGenero = identidadeGenero;
+		public void setIdentiGenero(String identiGenero) {
+			this.identiGenero = identiGenero;
 		}
-
-		public String getOrientacaoSexual() {
-			return orientacaoSexual;
+		public String getOrientSexo() {
+			return OrientSexo;
 		}
-
-		public void setOrientacaoSexual(String orientacaoSexual) {
-			this.orientacaoSexual = orientacaoSexual;
+		public void setOrientSexo(String orientSexo) {
+			OrientSexo = orientSexo;
 		}
-
 		public String getEtnia() {
 			return etnia;
 		}
-
 		public void setEtnia(String etnia) {
 			this.etnia = etnia;
 		}
-
-		public double getSalario() {
-			return salario;
+		public double getRenda() {
+			return renda;
 		}
-
-		public void setSalario(double salario) {
-			this.salario = salario;
+		public void setRenda(double renda) {
+			this.renda = renda;
 		}
-
-		void imprimir(){
-			System.out.println("Digite seu Nome: ");
-			String nome = entradaUsuario.nextLine();
-			//entradaUsuario.nextLine();
-			System.out.println("Com qual genero você se identifica: ");
-			String identidadeGenero = entradaUsuario.nextLine();
-			//entradaUsuario.nextLine();
-			System.out.println("Qual a sua orientação sexual: ");
-			String orientacaoSexual = entradaUsuario.nextLine();
-			//entradaUsuario.nextLine();
-			System.out.println("Qual a sua etnia: ");
-			String etnia = entradaUsuario.nextLine();
-			//entradaUsuario.nextLine();
-			System.out.println("Qual o seu salário: ");
-			double salario = entradaUsuario.nextDouble();
-			System.out.println("O Usuario "+nome+", que se identifica como "+identidadeGenero+
-					". Sua orientação é: "+orientacaoSexual+", sua entia: "+etnia+". Com salario de: "+salario);
-			}
-			}
+		// void nome() {
+		// System.out.println("Digite o seu nome: " + nome);
+	}
